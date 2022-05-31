@@ -3,11 +3,58 @@ html(lang="ru")
 	head
 		include utils/meta
 		link(rel="stylesheet", href="css/style.min.css")
+		link(rel="stylesheet", href="https://unpkg.com/aos@2.3.1/dist/aos.css")
 		link(rel="shortcut icon", href="files/favicon.ico")
 		include utils/fonts
 		title Main Page
 	body
 		include components/header
+		
+		.wrapper
+			section.main
+				h2.main__title(data-aos="fade-down") Super AOS library
+				h4.main__subtitle(data-aos="fade-down" data-aos-delay='300') Want to test how it works 
+				.main__grid.grid
+					.grid__item(data-aos="fade-down-right" data-aos-delay='500')
+						.grid__item-title(data-aos="zoom-in-right" data-aos-delay='900') I'm grid item 
+						.grid__item-text(data-aos="zoom-in-right" data-aos-delay='1100') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="fade-down-left" data-aos-delay='700')
+						.grid__item-title(data-aos="zoom-in-left" data-aos-delay='1100') I'm grid item 
+						.grid__item-text(data-aos="zoom-in-left" data-aos-delay='1300') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="fade-down-right" data-aos-delay='500')
+						.grid__item-title(data-aos="zoom-in-right" data-aos-delay='900') I'm grid item 
+						.grid__item-text(data-aos="zoom-in-right" data-aos-delay='1100') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="fade-down-left" data-aos-delay='700')
+						.grid__item-title(data-aos="zoom-in-left" data-aos-delay='1100') I'm grid item 
+						.grid__item-text(data-aos="zoom-in-left" data-aos-delay='1300') Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+				.main__image(data-aos="zoom-in-up" data-aos-duration='1000')
+					img(src="@img/background.jpg", alt="background")
+				.main__social
+					ul.main__social-list 
+						li.main__social-li(data-aos="fade-up-right" data-aos-duration='600' data-aos-delay='0') Vk
+						li.main__social-li(data-aos="fade-down-right" data-aos-duration='600' data-aos-delay='150') Twitter
+						li.main__social-li(data-aos="fade-up-right" data-aos-duration='600' data-aos-delay='300') Telegram
+						li.main__social-li(data-aos="fade-down-right" data-aos-duration='600' data-aos-delay='450') Instagram
+						li.main__social-li(data-aos="fade-up-right" data-aos-duration='600' data-aos-delay='600') Facebook
+				.main__grid.grid.grid--one-column
+					.grid__item(data-aos="custom-left" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="custom-right" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="custom-left" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="custom-right" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="custom-left" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
+					.grid__item(data-aos="custom-right" data-aos-duration='600')
+						.grid__item-title I'm grid item 
+						.grid__item-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus, hic voluptatem eum architecto deserunt? Temporibus blanditiis, ipsum earum iusto non dicta ex modi. Tempore tenetur excepturi natus neque. Quo facilis laudantium neque dolores a inventore, molestias harum officiis quod architecto ipsum dolore ratione eos unde. Hic deleniti non modi?
 
 		include components/footer
 		script(src='js/app.min.js')
